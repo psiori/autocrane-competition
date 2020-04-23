@@ -1,1 +1,50 @@
 # autocrane-competition
+
+Circular cranes are used in the paper processing industry. Logs are delivered by lorries. The logs can be put directly into the intake funnel or can be stored on the log pile. PSIORI is working on automating tasks like unloading a lorry, depositing logs on the log pile, picking up logs from the log pile and depositing logs in the intake funnel. The basic task to enable these behaviors is the detecting of the grapple and to classify whether there is wood in the grapple.
+
+
+<table><tr>
+<td> <img src="resources/img/Circular_crane.png" alt="Drawing" style="width: 295px;"/> </td>
+<td> <img src="resources/img/grapple_without_logs.png" alt="Drawing" style="width: 250px;"/> </td>
+<td> <img src="resources/img/grapple_with_logs.png" alt="Drawing" style="width: 250px;"/> </td>
+</tr></table>
+
+# Competition 1: Grapple Detection
+The aim of this competition is to detect the grapple. The link leads to [todo](todolink) 3982 labeled grapple images of the size 1024 * 648 * 3.
+
+## Tasks
+* Get an overview of the data
+* Look at the evaluation jupyter-notebook [grapple_evaluation.ipynb](Grapple/grapple_evaluation.ipynb)
+* Look at the module [processing.py](Grapple/processing.py)
+* Build a grapple detection model
+
+## Submission
+* Model as .h5-file [grapple.h5](https://www.tensorflow.org/tutorials/keras/save_and_load)
+* Modified file [processing.py](Grapple/processing.py)
+
+## Evaluation
+The evaluation is performed with the [grapple_evaluation.ipynb](Grapple/grapple_evaluation.ipynb) notebook. For the final ranking a secret dataset with 703 images will be used. As evaluation metric the „intersection over union“ (IoU) per image is calculated. Afterwards all images are evaluated as correct if the IoU value is greater or equal 80%. The final score is obtained by dividing the number of true positives by the number of all images. The module „grapple_evaluation_helper.py“ contains an implementation of the metric. PSIORI's model achieves a score of 0.87%.
+<img src="resources/img/IoU_Recall_Baseline.png" alt="Drawing" style="width: 250px;"/>
+
+
+# Competition 2: Logs Classification
+The aim of this competition is to classify whether there are logs in the grapple.  The link leads to [todo](todolink) 10968 (5873 without Logs; 5095 with Logs) labeled log images with the size 1024 * 648 * 3.
+
+## Tasks
+* Get an overview of the data
+* Look at the evaluation jupyter-notebook [Logs_evaluation.ipynb](Logs/„Logs_evaluation.ipynb)
+* Look at the module [processing.py](Logs/processing.py)
+* Build a logs classification model
+
+## Submission
+* Model as .h5-file [logs.h5](https://www.tensorflow.org/tutorials/keras/save_and_load)
+* Modified file [processing.py](Logs/processing.py)
+
+## Evaluation
+The evaluation is performed with the [Logs_evaluation.ipynb](Logs/„Logs_evaluation.ipynb) notebook. For the final ranking a secret dataset with 1225 images will be used. Accuracy ((TP+TN) / (TP+TN + FP + FN)) is used as the evaluation criterion. The module „logs_evaluation_helper.py“ contains an implementation of the metric.
+
+PSIORI's model achieves an accuracy of 0.98%.
+
+# Baseline-Models
+Below and can be found the Basiline models.
+Below [cabin_cam_grapple_detector](resources/cabin_cam_grapple_detector) and [cabin_cam_grapple_detector](resources/cabin_cam_grapple_detector) can the baseline models be found. The notebook [Baseline.ipynb](extra/Baseline.ipynb) and the module [model_loader.py](extra/model_loader.py) support the model inference. 
