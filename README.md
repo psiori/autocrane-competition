@@ -14,16 +14,26 @@ The aim of this competition is to detect the grapple. The link leads to [todo](t
 
 ## Tasks
 * Get an overview of the data
-* Look at the evaluation jupyter-notebook [grapple_evaluation.ipynb](Grapple/grapple_evaluation.ipynb)
-* Look at the module [processing.py](Grapple/processing.py)
+
+* Look at the evaluation jupyter-notebook 
+* Tensorflow
+  * Tensorflow [Tensorflow_Grapple_evaluation.ipynb](Grapple/Tensorflow_Grapple_evaluation.ipynb)
+  * Look at the module [processing.py](Grapple/processing.py)
+* Pytorch 
+  * [Pytorch_Grapple_evaluation.ipynb](Grapple/Pytorch_Grapple_evaluation.ipynb)
+  * [Pytorch_Grapple_model_development.ipynb](Grapple/Pytorch_Grapple_model_development.ipynb)
 * Build a grapple detection model
 
 ## Submission
-* Model as .h5-file [grapple.h5](https://www.tensorflow.org/tutorials/keras/save_and_load)
-* Modified file [processing.py](Grapple/processing.py)
+* Tensorflow
+  * Model as .h5-file [grapple.h5](https://www.tensorflow.org/tutorials/keras/save_and_load)
+  * Modified file [processing.py](Grapple/processing.py)
+* Pytorch
+  * [Pytorch_Grapple_evaluation.ipynb](Grapple/Pytorch_Grapple_evaluation.ipynb)
+  * Model-File
 
 ## Evaluation
-The evaluation is performed with the [grapple_evaluation.ipynb](Grapple/grapple_evaluation.ipynb) notebook. For the final ranking a secret dataset with 703 images will be used. As evaluation metric the „intersection over union“ (IoU) per image is calculated. Afterwards all images are evaluated as correct if the IoU value is greater or equal 80%. The final score is obtained by dividing the number of true positives by the number of all images. The module „grapple_evaluation_helper.py“ contains an implementation of the metric. PSIORI's model achieves a score of 0.87%.
+The evaluation is performed with the [grapple_evaluation.ipynb](Grapple/grapple_evaluation.ipynb) / [Pytorch_Grapple_evaluation.ipynb](Grapple/Pytorch_Grapple_evaluation.ipynb) notebook. For the final ranking a secret dataset with 703 images will be used. As evaluation metric the „intersection over union“ (IoU) per image is calculated. Afterwards all images are evaluated as correct if the IoU value is greater or equal 80%. The final score is obtained by dividing the number of true positives by the number of all images. The module „grapple_evaluation_helper.py“ contains an implementation of the metric. PSIORI's model achieves a score of 0.87%.
 <img src="resources/img/IoU_Recall_Baseline.png" alt="Drawing" style="width: 250px;"/>
 
 
@@ -32,16 +42,25 @@ The aim of this competition is to classify whether there are logs in the grapple
 
 ## Tasks
 * Get an overview of the data
-* Look at the evaluation jupyter-notebook [Logs_evaluation.ipynb](Logs/„Logs_evaluation.ipynb)
-* Look at the module [processing.py](Logs/processing.py)
+* Look at the evaluation jupyter-notebook 
+* Tensorflow
+  * [Tensorflow_Logs_evaluation.ipynb](Logs/Tensorflow_Logs_evaluation.ipynb)
+  * Look at the module [processing.py](Logs/processing.py)
+* Pytorch
+  * [Pytorch_Logs_evaluation.ipynb](Logs/Pytorch_Logs_evaluation.ipynb)
+  * [Pytorch_Logs_model_development.ipynb](Logs/Pytorch_Logs_model_development.ipynb)
 * Build a logs classification model
 
 ## Submission
-* Model as .h5-file [logs.h5](https://www.tensorflow.org/tutorials/keras/save_and_load)
-* Modified file [processing.py](Logs/processing.py)
+* Tensorflow
+  * Model as .h5-file [logs.h5](https://www.tensorflow.org/tutorials/keras/save_and_load)
+  * Modified file [processing.py](Logs/processing.py)
+* Pytorch
+  * [Pytorch_Logs_evaluation.ipynb](Grapple/Pytorch_Logs_evaluation.ipynb)
+  * Model-File
 
 ## Evaluation
-The evaluation is performed with the [Logs_evaluation.ipynb](Logs/„Logs_evaluation.ipynb) notebook. For the final ranking a secret dataset with 1225 images will be used. Accuracy ((TP+TN) / (TP+TN + FP + FN)) is used as the evaluation criterion. The module „logs_evaluation_helper.py“ contains an implementation of the metric.
+The evaluation is performed with the [Tensorflow_Logs_evaluation.ipynb](Logs/Tensorflow_Logs_evaluation.ipynb) /  [Pytorch_Logs_evaluation.ipynb](Logs/Pytorch_Logs_evaluation.ipynb) notebook. For the final ranking a secret dataset with 1225 images will be used. Accuracy ((TP+TN) / (TP+TN + FP + FN)) is used as the evaluation criterion. The module „logs_evaluation_helper.py“ contains an implementation of the metric.
 
 PSIORI's model achieves an accuracy of 0.98%.
 
