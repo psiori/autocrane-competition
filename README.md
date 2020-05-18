@@ -10,7 +10,7 @@ Circular cranes are used in the paper processing industry. Logs are delivered by
 </tr></table>
 
 # Competition 1: Grapple Detection
-The aim of this competition is to detect the grapple. The link leads to [todo](todolink) 3982 labeled grapple images of the size 1024 * 648 * 3.
+The aim of this competition is to detect the grapple. The link leads to [autocrane-grapple-data](https://seafile.psiori.com/d/5a309b8297444b03b2dd) 3982 labeled grapple images of the size 1024 * 648 * 3.
 
 ## Tasks
 * Get an overview of the data
@@ -38,7 +38,7 @@ The evaluation is performed with the [grapple_evaluation.ipynb](Grapple/grapple_
 
 
 # Competition 2: Logs Classification
-The aim of this competition is to classify whether there are logs in the grapple.  The link leads to [todo](todolink) 10968 (5873 without Logs; 5095 with Logs) labeled log images with the size 1024 * 648 * 3.
+The aim of this competition is to classify whether there are logs in the grapple.  The link leads to [autocrane-logs-data](https://seafile.psiori.com/d/42c6cc05c558449ab537/) 10968 (5873 without Logs; 5095 with Logs) labeled log images with the size 1024 * 648 * 3.
 
 ## Tasks
 * Get an overview of the data
