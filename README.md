@@ -66,6 +66,9 @@ The evaluation is performed with the [Tensorflow_Logs_evaluation.ipynb](Logs/Ten
 
 PSIORI's model achieves an accuracy of 0.98%.
 
+## Competition 2 b: Logs Classification and Representation
+The aim of this competition is to classify whether there are logs in the grab. The task should be performed by a suitable representation and not directly by the pictures. First of all a representation (e.g. autoencoder) must be found.  Afterwards the task of classification is carried out on the representation. A simple baseline model for the task can be found a xyz.First of all a representation (e.g. autoencoder) must be found.  Afterwards the task of classification is carried out on the representation.At [simple_Model](resources/representation_and_classification) a simple baseline model for the task can be found.  It reaches an accuracy of 0.76 %. Can you find a model which is better? (PSIORI has a more sophisticated model which achieves an accuracy of 0.98%). 
+
 # Baseline-Models
 Below you will find the Baseline models: 
 [cabin_cam_grapple_detector](resources/cabin_cam_grapple_detector) and [cabin_cam_grapple_detector](resources/cabin_cam_grapple_detector). The notebook [Baseline.ipynb](extra/Baseline.ipynb) and the module [model_loader.py](extra/model_loader.py) support the model inference. 
