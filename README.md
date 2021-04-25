@@ -1,4 +1,8 @@
-# autocrane-competition
+# Autocrane Competition
+
+This is a dataset for Machine Learning benchmarking. The work was supported by the German Federal Ministry of Education and Research (BMBF) via the DeToL project grant.
+
+# Introduction
 
 Circular cranes are used in the paper processing industry. Logs are delivered by lorries. The logs can be put directly into the intake funnel or can be stored on the log pile. PSIORI is working on automating tasks like unloading a lorry, depositing logs on the log pile, picking up logs from the log pile and depositing logs in the intake funnel. The basic task to enable these behaviors is the detecting of the grapple and to classify whether there is wood in the grapple or not.
 
