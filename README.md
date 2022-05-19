@@ -7,12 +7,6 @@ This is a dataset for Machine Learning benchmarking. The work was supported by t
 Circular cranes are used in the paper processing industry. Logs are delivered by lorries. The logs can be put directly into the intake funnel or can be stored on the log pile. PSIORI is working on automating tasks like unloading a lorry, depositing logs on the log pile, picking up logs from the log pile and depositing logs in the intake funnel. The basic task to enable these behaviors is the detecting of the grapple and to classify whether there is wood in the grapple or not.
 
 
-<table><tr>
-<td> <img src="resources/img/Circular_crane.png" alt="Drawing" style="width: 295px;"/> </td>
-<td> <img src="resources/img/grapple_without_logs.png" alt="Drawing" style="width: 250px;"/> </td>
-<td> <img src="resources/img/grapple_with_logs.png" alt="Drawing" style="width: 250px;"/> </td>
-</tr></table>
-
 # Competition 1: Grapple Detection
 The aim of this competition is to detect the grapple. In [autocrane-grapple-data](https://seafile.psiori.com/d/5a309b8297444b03b2dd) you can find 3982 labeled grapple images of the size 1024 * 648 * 3.
 
